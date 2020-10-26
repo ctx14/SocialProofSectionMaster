@@ -1,0 +1,195 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	font-family: 'Spartan', sans-serif;	
+	
+}
+
+p {
+	font-size: 15px;
+	line-height: 1.8;
+	
+}
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+	  
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+}
+
+.container {
+	padding: 10px;
+}
+
+
+
+/*********************
+MAIN 
+**********************/
+
+
+.main {
+	
+	text-align: center;
+	
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+.main-sec {
+	
+	padding: 10px;
+	margin: 20px 0;
+}
+
+.main-sec h1 {
+	font-size: 3em;
+	color: hsl(300, 43%, 22%);
+}
+
+.main-sec p {
+	color: hsl(303, 10%, 53%);
+}
+
+/*********************
+RATING CARDS
+**********************/
+
+
+.rating-card {
+	background-color: hsl(300, 24%, 96%);
+	border-radius: 10px;
+	margin: 10px 0;
+	padding: 15px;
+	
+}
+
+.star-review {
+	color: hsl(300, 43%, 22%);
+	font-weight: bold;
+	}
+	
+.rating-card .stars {
+	background: url("../images/icon-star.svg") repeat-x;
+
+	height: 15px;
+	width: 89px;
+	display: inline-block;
+	padding: 10px;
+}
+
+
+/*********************
+REVIEWER CARDS
+**********************/
+
+.reviewer-section {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	padding: 20px 0;
+	
+}
+
+.reviewer-card {
+	background-color: hsl(300, 43%, 22%);
+	border-radius: 12px;
+	padding: 35px;
+	margin: 10px 0;
+	color: hsl(0, 0%, 100%);
+}
+
+p.v-buyer {
+	color: hsl(333, 80%, 67%);
+}
+
+.profile-image img {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	margin-right: 10px;
+}
+
+.profile-verify p {
+	line-height: .5;
+}
+
+.profile-verify, .profile-image  {
+	display: inline-block;
+}
+/*********************
+MEDIA QUERIES
+**********************/
+
+
+@media screen and (min-width: 1440px) {
+	
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	
+	}
+	
+	.main {
+	flex-direction: row;
+	text-align: left;
+
+	}
+	
+	.main-sec {
+		flex-grow: 1;
+		flex-basis: 0;
+	}
+	
+	.rating-card {
+		width: 90%;
+	}
+	
+	.stars, .star-review {
+		margin: 0 10px;
+		display: inline-block;
+		
+	}
+	
+	.rating-card:nth-child(2) {
+		margin-left: 5%;
+	}
+	
+	.rating-card:nth-child(3) {
+		margin-left: 10%;
+	}
+	
+
+.reviewer-card:nth-child(2) {
+	margin-top: 1%;
+}
+
+.reviewer-card:nth-child(3) {
+	margin-top: 2%;
+	
+}
+	
+	
+	.reviewer-section {
+		
+		flex-direction: row;
+		
+	}
+	
+	.reviewer-card {
+		flex-grow: 1;
+		flex-basis: 0;
+		margin: 0 10px;
+		height: auto;
+		
+}
+
+}
