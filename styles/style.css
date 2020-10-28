@@ -31,7 +31,7 @@ p {
 
 .container {
 	
-	padding: 10px;
+	padding: 10px 15px;
 }
 
 
@@ -44,7 +44,6 @@ MAIN
 .main {
 	
 	text-align: center;
-	
 	display: flex;
 	flex-direction: column;
 }
@@ -53,7 +52,6 @@ MAIN
 
 .main-sec {
 	
-	padding: 10px;
 	margin: 20px 0;
 }
 
@@ -86,9 +84,8 @@ RATING CARDS
 	
 .rating-card .stars {
 	background: url("../images/icon-star.svg") repeat-x;
-
 	height: 15px;
-	width: 89px;
+	width: 86px;
 	display: inline-block;
 	padding: 10px;
 }
@@ -132,6 +129,11 @@ p.v-buyer {
 .profile-verify, .profile-image  {
 	display: inline-block;
 }
+
+.attribution {
+	padding: 20px 0;
+}
+
 /*********************
 MEDIA QUERIES
 **********************/
@@ -176,6 +178,16 @@ body {
 		display: inline-block;
 		
 	}
+
+	
+	.reviewer-card {
+		flex-grow: 1;
+		flex-basis: 0;
+		margin: 0 10px;
+		height: 20%;
+		
+}
+
 	
 	.rating-card:nth-child(2) {
 		margin-left: 5%;
@@ -202,12 +214,5 @@ body {
 		
 	}
 	
-	.reviewer-card {
-		flex-grow: 1;
-		flex-basis: 0;
-		margin: 0 10px;
-		height: auto;
-		
-}
 
 }
